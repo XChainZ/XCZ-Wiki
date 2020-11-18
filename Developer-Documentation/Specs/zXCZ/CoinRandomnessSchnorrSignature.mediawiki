@@ -6,8 +6,9 @@
 This document describes a new type of PublicCoinSpend, marked with version number '''4'''.
 
 === Background ===
-The [https://github.com/PIVX-Project/PIVX/pull/891 PublicCoinSpend] class was introduced (with version '''3''') subclassing the (version '''2''') <code>CoinSpend</code> class, after the recent libzerocoin exploits in order to bypass the broken P1 proof.<br>
+The [https://github.com/XChainz/PIVX/pull/891 PublicCoinSpend] class was introduced (with version '''3''') subclassing the (version '''2''') <code>CoinSpend</code> class, after the recent libzerocoin exploits in order to bypass the broken P1 proof.<br>
 This came at the cost of the Zerocoin protocol privacy. As the name suggests, in fact, <code>PublicCoinSpend</code>s are not private.
+This is a fork of PIVZ
 
 This de-anonymized spend process happens in the following way:
 * each input reveals the mint transaction output (containing the public coin value ''C'') referencing the previous outpoint, just like regular basecoin transactions reference UTXOs in their inputs.
