@@ -1,10 +1,10 @@
-PIVX API call list (as of version 3.0.6)
+XCZ API call list (as of version 3.0.6)
 
 == Common operations ==
 
-=== Listing my PIVX addresses ===
+=== Listing my XCZ addresses ===
 
-Listing the PIVX [[address|addresses]] in your wallet is easily done via ''listreceivedbyaddress''. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
+Listing the XCZ [[address|addresses]] in your wallet is easily done via ''listreceivedbyaddress''. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
 
 [[accounts explained|Accounts]] are used to organize addresses.
 
