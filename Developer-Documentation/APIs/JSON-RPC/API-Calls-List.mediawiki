@@ -287,8 +287,8 @@ See [https://github.com/bitcoin/bitcoin/blob/62f2d769e45043c1f262ed45babb70fe237
 
 ==See Also==
 
-* [[API reference JSON-RPC]]
-* [http://code.gogulski.com/bitcoin-php/class_bitcoin_client.html PHP BitcoinClient Class Reference]
+* [https://github.com/XChainZ/XCZ-Wiki/blob/master/Developer-Documentation/APIs/JSON-RPC/API-Reference-JSON-RPC.mediawiki API reference JSON-RPC]
+
 
 ==References==
 <references />
