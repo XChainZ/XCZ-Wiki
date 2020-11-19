@@ -44,8 +44,6 @@ Required arguments are denoted inside &lt; and &gt; Optional arguments are insid
 |-
 | <code>gettxoutsetinfo</code> || &nbsp; || Returns statistics about the unspent transaction output set. || N
 |-
-| <code>invalidateblock</code> || &lt;hash&gt; || Permanently marks a block as invalid, as if it violated a consensus rule.|| N
-|-
 | <code>reconsiderblock</code> || &lt;hash&gt; || Removes invalidity status of a block and its descendants, reconsider them for activation.
 This can be used to undo the effects of invalidateblock. || N
 |-
@@ -60,8 +58,6 @@ This can be used to undo the effects of invalidateblock. || N
 | <code>stop</code> || &nbsp; || Stop XCZ server. || N
 |-
 !colspan="4" | Generating
-|-
-| <code>getgenerate</code> || &nbsp; || '''PoW Only''' Return if the server is set to generate coins or not. The default is false. It is set with the command line argument -gen (or XCZ.conf setting gen) It can also be set with the setgenerate call. || N
 |-
 | <code>setgenerate</code> || &lt;generate&gt; [genproclimit] || '''PoW Only''' Set 'generate' true or false to turn generation on or off. Generation is limited to 'genproclimit' processors, -1 is unlimited. See the getgenerate call for the current setting. || N
 |-
@@ -144,8 +140,6 @@ otherwise connected information will also be available. || N
 |-
 | <code>masternodedebug</code> || &nbsp || Print masternode status. || N
 |-
-| <code>mnbudget</code> || &lt;command&gt; [passphrase] || '''Depreciated in version 2.3.1''' Vote or show current budgets. || N
-|-
 | <code>mnbudgetrawvote</code> || &lt;masternode-tx-hash&gt; &lt;masternode-tx-index&gt; &lt;proposal-hash&gt; &lt;yes&#124;no&gt; &lt;time&gt; &lt;vote-sig&gt; || Compile and relay a proposal vote with provided external signature instead of signing vote internally. || N
 |-
 | <code>mnbudgetvote</code> || &lt;local&#124;many&#124;alias&gt; &lt;votehash&gt; &lt;yes&#124;no&gt; [alias] || Vote on a budget proposal. || N
@@ -205,8 +199,6 @@ If 'account' is specified, assign address to that account. || Y/N
 | <code>dumpprivkey</code> || &lt;XCZaddress&gt; || Reveals the private key corresponding to 'XCZaddress'. || Y
 |-
 | <code>dumpwallet</code> || &lt;filename&gt; || Dumps all wallet keys in a human-readable format. || Y
-|-
-| <code>encryptwallet</code> || &lt;passphrase&gt; || Encrypts the wallet with &lt;passphrase&gt;. || N
 |-
 | <code>getaccount</code> || &lt;XCZaddress&gt; || Returns the account associated with the given address. || N
 |-
@@ -285,35 +277,6 @@ If 'account' is specified, assign address to that account. || Y/N
 | <code>walletpassphrase</code> || &lt;passphrase&gt; &lt;timeout&gt; [anonymizeonly=false] || Stores the wallet decryption key in memory for 'timeout' seconds. || N
 |-
 | <code>walletpassphrasechange</code> || &lt;oldpassphrase&gt; &lt;newpassphrase&gt; || Changes the wallet passphrase from 'oldpassphrase' to 'newpassphrase'. || N
-|-
-!colspan="4" | Zerocoin
-|-
-| <code>exportzerocoins</code> || &lt;include_spent&gt; [denomination] || Exports zerocoin mints that are held by this wallet.dat || Y
-|-
-| <code>getarchivedzerocoin</code> || &nbsp; || Display zerocoins that were archived because they were believed to be orphans. || Y
-|-
-| <code>getspentzerocoinamount</code> || &lt;hexstring&gt; &lt;index&gt; || Returns value of spent zerocoin output designated by transaction hash and input index. || N
-|-
-| <code>getzerocoinbalance</code> || &nbsp; || Returns the balance of all unspent zerocoins in this wallet. || Y
-|-
-| <code>importzerocoins</code> || &lt;importdata&gt; || Import zerocoin mints. Adds raw zerocoin mints to the wallet.dat.
-Note it is recommended to use the json export created from the exportzerocoins RPC call || Y
-|-
-| <code>listmintedzerocoins</code> || &nbsp; || Return an array of zerocoin mints. || Y
-|-
-| <code>listspentzerocoins</code> || &nbsp; || Return an array of spent zerocoins. || Y
-|-
-| <code>listzerocoinamounts</code> || &nbsp; || List the denomination amounts held in this wallet. || Y
-|-
-| <code>mintzerocoin</code> || &lt;amount&gt; || Mint given amount from PIV to zPIV. || Y
-|-
-| <code>reconsiderzerocoins</code> || &nbsp; || Check archived zPiv list to see if any mints were added to the blockchain.. || Y
-|-
-| <code>resetmintzerocoin</code> || [extended_search] || Scan the blockchain for all of the zerocoins that are held in the wallet.dat. Update any meta-data that is incorrect. || Y
-|-
-| <code>resetspentzerocoin</code> || &nbsp; || Scan the blockchain for all of the zerocoins that are held in the wallet.dat. Reset mints that are considered spent that did not make it into the blockchain. || Y
-|-
-| <code>spendzerocoin</code> || &lt;amount&gt; &lt;mintchange&gt; &lt;minimizechange&gt; &lt;seclevel&gt; &lt;address&gt; || Spend zPIV to given address with optional reminting of change. || Y
 |}
 
 ==Error Codes==
