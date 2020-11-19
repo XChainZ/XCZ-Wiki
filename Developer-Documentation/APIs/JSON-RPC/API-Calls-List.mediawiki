@@ -81,9 +81,9 @@ This can be used to undo the effects of invalidateblock. || N
 |-
 | <code>addnode</code> || &lt;node&gt; &lt;add&#124;remove&#124;onetry&gt; || Attempts add or remove a node from the addnode list. Or try a connection to a node once. || N
 |-
-| <code>clearbanned</code> || &nbsp; || '''version 3.1.0''' Clear all banned IPs. || N
+| <code>clearbanned</code> || &nbsp; ||  Clear all banned IPs. || N
 |-
-| <code>disconnectnode</code> || &lt;node&gt; || '''version 3.1.0''' Immediately disconnects from the specified node. || N
+| <code>disconnectnode</code> || &lt;node&gt; || Immediately disconnects from the specified node. || N
 |-
 | <code>getaddednodeinfo</code> || &lt;dns&gt; [node] || Returns information about the given added node, or all added nodes.
 (note that onetry addnodes are not listed here)
@@ -98,11 +98,11 @@ otherwise connected information will also be available. || N
 |-
 | <code>getpeerinfo</code> || &nbsp; || Returns data about each connected network node as a json array of objects. || N
 |-
-| <code>listbanned</code> || &nbsp; || '''version 3.1.0''' List all banned IPs/Subnets. || N
+| <code>listbanned</code> || &nbsp; ||  List all banned IPs/Subnets. || N
 |-
 | <code>ping</code> || &nbsp; || Requests that a ping be sent to all other nodes, to measure ping time. || N
 |-
-| <code>setban</code> || &lt;ip(/netmask)&gt; &lt;add&#124;remove&gt; [bantime] [absolute] || '''version 3.1.0''' Attempts add or remove a IP/Subnet from the banned list. || N
+| <code>setban</code> || &lt;ip(/netmask)&gt; &lt;add&#124;remove&gt; [bantime] [absolute] ||  Attempts add or remove a IP/Subnet from the banned list. || N
 |-
 !colspan="4" | XCZ
 |-
