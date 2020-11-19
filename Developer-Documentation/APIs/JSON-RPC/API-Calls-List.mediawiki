@@ -7,9 +7,9 @@ XCZ API call list (as of version 1.0.0)
 
 === Listing my XCZ addresses ===
 
-Listing the XCZ [[address|addresses]] in your wallet is easily done via ''listreceivedbyaddress''. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
+Listing the XCZ addresses in your wallet is easily done via ''listreceivedbyaddress''. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
 
-[[accounts explained|Accounts]] are used to organize addresses.
+Accounts are used to organize addresses.
 
 == Full list ==
 
@@ -31,6 +31,8 @@ Required arguments are denoted inside &lt; and &gt; Optional arguments are insid
 | <code>getblockhash</code> || &lt;index&gt; || Returns hash of block in best-block-chain at index provided. || N
 |-
 | <code>getblockheader</code> || &lt;hash&gt; [verbose] || If verbose is false, returns a string that is serialized, hex-encoded data for block 'hash' header. If verbose is true, returns an Object with information about block &lt;hash&gt; header. || N
+|-
+| <code>getblockindexstats</code> || height range [fFeeOnly] || Returns aggregated BlockIndex data for blocks [height, height+1, height+2, ..., height+range-1] || N
 |-
 | <code>getchaintips</code> || &nbsp; || Return information about all known tips in the block tree, including the main chain as well as orphaned branches. || N
 |-
@@ -126,13 +128,13 @@ otherwise connected information will also be available. || N
 |-
 | <code>getnextsuperblock</code> || &nbsp; || Print the next super block height || N
 |-
-| <code>getpoolinfo</code> || &nbsp; || '''Depreciated in version 3.0.0''' Returns anonymous pool-related information || N
+| <code>getpoolinfo</code> || &nbsp; ||  Returns anonymous pool-related information || N
 |-
 | <code>listmasternodeconf</code> || [filter] || Print masternode.conf in JSON format. || N
 |-
 | <code>listmasternodes</code> || [filter] || Get a ranked list of masternodes. Optional filter by txhash, status, or payment address. || N
 |-
-| <code>masternode</code> || &lt;command&gt; || '''Depreciated in version 2.3.1''' Set of commands to execute masternode related actions. || Y/N
+| <code>masternode</code> || &lt;command&gt; ||  Set of commands to execute masternode related actions. || Y/N
 |-
 | <code>masternodeconnect</code> || &lt;address&gt; || Attempts to connect to specified masternode address. || N
 |-
